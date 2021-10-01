@@ -1,0 +1,24 @@
+/*box sizing appliqué à tous les éléments*/
+*{
+    box-sizing: border-box;
+    font-family: 'raleway', monospace, sans-serif;
+
+}
+ul{
+    list-style-type: none;
+
+    
+}
+
+ https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css
+
+
+ .nav > li{
+     exemple
+ }
+ label {
+     background-color: gray;
+     padding: 8px;
+ }
+
+ 
