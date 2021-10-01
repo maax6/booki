@@ -4,21 +4,39 @@
     font-family: 'raleway', monospace, sans-serif;
 
 }
-ul{
+/*header*/
+body > main:nth-child(2) > div:nth-child(1) > h1:nth-child(1) { /*taille h1 hebergement de reve*/
+    font-size: 1.2em;
+   }
+.logohead{
+    height: 0,5rem;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+   
+ul {
     list-style-type: none;
-
+}
+label {
+     background-color: hsla(180, 6%, 60%, 0.35);
+     padding: 4px;
+}
+nav {
+     display: flex;
+     margin-right: 30px;
+     justify-content: space-between;
+}
+nav ul {
+    display: flex;
     
 }
-
- https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css
-
-
- .nav > li{
-     exemple
- }
- label {
-     background-color: gray;
-     padding: 8px;
- }
-
- 
+nav li {
+    margin-right: 68px;
+    margin-top: 25px;
+    
+}
+nav > img{
+   padding-left: 25px;
+   height: 45px;
+   align-items: center;
+}
