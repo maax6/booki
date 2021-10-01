@@ -42,3 +42,14 @@ nav > img{
 body > main:nth-child(2) > div:nth-child(1) > h1:nth-child(1) { /*taille h1 hebergement de reve*/
     font-size: 1.2em;
    }
+/*bloc filtres*/
+.bloc-filtres {
+    display: flex;
+}
+.liste-filtres{
+    display: flex;
+    font-size: 1em;
+}
+.liens-filtres{
+    padding-right: 25px;
+}
