@@ -5,9 +5,7 @@
 
 }
 /*header*/
-body > main:nth-child(2) > div:nth-child(1) > h1:nth-child(1) { /*taille h1 hebergement de reve*/
-    font-size: 1.2em;
-   }
+
 .logohead{
     height: 0,5rem;
     margin-top: 15px;
@@ -40,3 +38,7 @@ nav > img{
    height: 45px;
    align-items: center;
 }
+/*main*/
+body > main:nth-child(2) > div:nth-child(1) > h1:nth-child(1) { /*taille h1 hebergement de reve*/
+    font-size: 1.2em;
+   }
