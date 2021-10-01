@@ -43,13 +43,14 @@ body > main:nth-child(2) > div:nth-child(1) > h1:nth-child(1) { /*taille h1 hebe
     font-size: 1.2em;
    }
 /*bloc filtres*/
-.bloc-filtres {
+#bloc-filtres {
     display: flex;
 }
-.liste-filtres{
+#liste-filtres{
     display: flex;
-    font-size: 1em;
+    padding-top: center;
 }
 .liens-filtres{
-    padding-right: 25px;
+    padding-right: 15px;
+    padding-top: 10px;
 }
