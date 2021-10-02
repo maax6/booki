@@ -43,23 +43,23 @@
              <!--Zone de recherche-->
             <div class=" bloc-rechercher">
                 <form method="post" action="traitement.php">
-                    <p>
+                    <div class="bloc-rechercher">
                         <label for="Ville"><i class="fas fa-map-marker-alt"></i></label>
                         <input type="search" name="zone" id="Ville" placeholder="Marseille, France" size="16" >
                         <input type="submit" value="Rechercher">
-                    </p>
+                    </div>
                 </form>
             </div>
              <!--Zone de recherche-->
 
              <!--Filtres-->
-            <div id="bloc-filtres">
-                <h2 class="titre-filtres">Filtres</h2>
+            <div id="bloc_filtre">
+                <h2 class="bloc_filtre_titre">Filtres</h2>
                 <ul id="liste-filtres">
-                    <li class="liens-filtres"><a href="#"><i class="fas fa-money-bill-wave"></i>Économique</a></li>
-                    <li class="liens-filtres"><a href="#"><i class="fas fa-child"></i>Familial</a></li>
-                    <li class="liens-filtres"><a href="#"><i class="fas fa-heart"></i>Romantique</a></li>
-                    <li class="liens-filtres"><a href="#"><i class="fas fa-dog"></i>Animaux autorisés</a></li>
+                    <li class="bloc_filtre_lien"><a href="#"><i class="fas fa-money-bill-wave"></i>Économique</a></li>
+                    <li class="bloc_filtre_lien"><a href="#"><i class="fas fa-child"></i>Familial</a></li>
+                    <li class="bloc_filtre_lien"><a href="#"><i class="fas fa-heart"></i>Romantique</a></li>
+                    <li class="bloc_filtre_lien"><a href="#"><i class="fas fa-dog"></i>Animaux autorisés</a></li>
                 </ul>
             </div>
             <div>
@@ -68,14 +68,25 @@
              <!--Filtres-->
 
              <!--bloc hébergements-->
-            <section class="bloc-hebergement">
-                <h2>Hébergement à Marseille</h2>
-                <div>
-                    <p>
-                        <h4>Auberge La Cannebiere</h4>
-                         <div>Nuit à partir de 25€</div>
-                    </p>
-                </div>
+            <section class="bloc_hebergement">
+                <h2 class="bloc_hebergement_titre_general">Hébergement à Marseille</h2>
+                <a class="bloc_hebergement_carteCliquable" href="#">
+                    <img class="Bloc_hebergement_photo" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo de lits superposés avec deux fenêtres et vue sur la ville">
+                    <div class="bloc_hebergement_caseTexte">
+                        <h4 class="bloc_hebergement_titreCarte">Auberge La Cannebière</h4>
+                        <p class="bloc_hebergement_info">Nuit à partir de
+                            <strong class="bloc_hebergement_prix">25€</strong>
+                        </p>
+                        <div class="bloc_hebergement_note">
+                            <i class="fas fa-star bloc_hebergement_note_etoilePleine"></i>
+                            <i class="fas fa-star bloc_hebergement_note_etoilePleine"></i>
+                            <i class="fas fa-star bloc_hebergement_note_etoilePleine"></i>
+                            <i class="fas fa-star bloc_hebergement_note_etoilePleine"></i>
+                            <i class="far fa-star bloc_hebergement_note_etoileVide"  ></i>
+                            <!--rechercher 🚨comment styliser les icones-->
+                        </div> 
+                    </div>
+                </a>
                 <div>
                     <p>
                         <h4>Hôtel du port</h4> 
@@ -106,10 +117,10 @@
                         <div>Nuit à partir de 96€</div>
                     </p>
                 </div>
+            </section>
                 <!--bloc hebergement-->
 
                 <!--bloc poulaire-->
-            </section>
             <section class="bloc-populaire">
                 <h2>Les plus populaires</h2>
                 <div>
