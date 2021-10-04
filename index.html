@@ -24,7 +24,7 @@
 
      <!--header-->
         <header>
-            <nav>
+            <nav class="nav">
                 <img class="logohead" src="images/logo/Booki.png" alt="Logo Booki">
                 <ul class="nav-ul" >
                     <li class="nav-hebergements"><a href="#bloc_hebergement">Hébergements</a></li>
@@ -49,11 +49,11 @@
                         <input type="submit" value="Rechercher">
                     </div>
                 </form>
-            </div>
+            </section>
              <!--Filtres-->
             <section id="bloc_filtre">
                 <h2 class="bloc_filtre_titre">Filtres</h2>
-                <ul id="liste-filtres">
+                <ul id="liste_filtres">
                     <li class="bloc_filtre_lien"><a href="#"><i class="fas fa-money-bill-wave"></i>Économique</a></li>
                     <li class="bloc_filtre_lien"><a href="#"><i class="fas fa-child"></i>Familial</a></li>
                     <li class="bloc_filtre_lien"><a href="#"><i class="fas fa-heart"></i>Romantique</a></li>
@@ -265,28 +265,30 @@
         </main>
      <!--Footer-->
     <footer>
-        <div>
-            <h4>À propos</h4>
-            <ul>
-                <li>Fonctionnement du site</li>
-                <li>Conditions générales de vente</li>
-                <li>Données et confidentialité</li>
-            </ul>
-        </div>
-        <div>
-            <h4>Nos Hébergements</h4>
-            <ul>
-                <li>Charte qualité</li>
-                <li>Soumettre votre hôtel</li>
-            </ul>
-        </div>
-        <div>
-            <h4>Assistance</h4>
-            <ul>
-                <li>Centre d'aide</li>
-                <li>Nous contacter</li>
-            </ul>
-        </div>
+        <section class="pied_dePage" id="pied_dePage">
+            <div class="footer_col">
+                <h4>À propos</h4>
+                <ul class="Pied_dePage_lists">
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Nos Hébergements</h4>
+                <ul class="Pied_dePage_lists">
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Assistance</h4>
+                <ul class="Pied_dePage_lists">
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+        </section>
     </footer>
     </body>
 </html>
