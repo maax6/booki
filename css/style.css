@@ -7,14 +7,12 @@
 
 }
 /*header*/
-img{ 
-    width: 100%;
-}
+
 .logohead{
-    height: auto;
+    max-height: 75px;
     margin-top: 15px;
     margin-left: 30px;
-    justify-content: left;
+
 }
 .nav-hebergements{
     border-top: solid;
@@ -31,13 +29,15 @@ nav {
     display: flex;
     margin-right: 30px;
     justify-content: space-between;
-    padding-top: ;
 }
-.bloc_intro{
-
-}
+/*Bloc principal********************/
+.bloc_principal{
+    background: #604dab;
+    border-radius: 25px;
+   }
+/*hebergement***********************/
   .bloc_hebergement{
-    max-height: 100%; ;
+    max-height: 100%; 
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -47,18 +47,92 @@ nav {
   .bloc_hebergement_carteCliquable{
       background-color: hotpink;
       box-sizing:border-box;
-      max-height: 100%;
-      max-width: 100%;
-
+      display: flex;
+      width: 50%;
+      flex-direction: column;
+      padding: 10px;
+      justify-content: center;
+      border-radius: 25px;
+      
   }
-   .bloc_principal{
-    background: #604dab;
-    border-radius: 25px;
-   }
    
+   .bloc_hebergement_casePhoto{
+    height: 73%;
+   }
+   .bloc_hebergement_photo{
+    width: 100%;
+    height: inherit;
+    margin: 0px;
+    object-fit: cover;
+    border-radius:25px ;
+   }
+   /*populaire***********************/
+   .bloc_populaire{
+    max-height: 100%; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+  }
+  .bloc_populaire_carteCliquable{
+      background-color: rgb(105, 255, 150);
+      box-sizing:border-box;
+      display: flex;
+      width: 50%;
+      flex-direction: column;
+      padding: 10px;
+      justify-content: center;
+      border-radius: 25px;
+  }
+   
+   .bloc_populaire_casePhoto{
+    height: 73%;
+   }
+
+   .bloc_populaire_photo{
+    width: 100%;
+    height: inherit;
+    margin: 0px;
+    object-fit: cover;
+    border-radius:25px ;
+   }
+     /*Bloc activités******************/
+     
+    .bloc_activites{
+    max-height: 100%; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    }
+    .bloc_activites_carteCliquable{
+    background-color: rgb(33, 58, 224);
+    box-sizing:border-box;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 25px;
+    }
+    
+    .bloc_activites_casePhoto{
+    height: 73%;
+    }
+    .bloc_activites_photo{
+    width: 100%;
+    height: inherit;
+    margin: 0px;
+    object-fit: cover;
+    border-radius:25px ;
+    }
 ul {
     list-style-type: none;
     margin-block-start: 0px;
+    
+   
 }
 label {
      background-color: hsla(180, 6%, 60%, 0.35);
@@ -77,6 +151,7 @@ nav li {
 .nav_hebergements, .nav_activites{ /*supprimer*/
     padding-top: 20px;
 }
+
 
 /*main*/
 
