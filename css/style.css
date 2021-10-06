@@ -1,16 +1,60 @@
 /*box sizing appliqué à tous les éléments*/
 *{
     box-sizing: border-box;
-    font-family: monospace,'raleway',  sans-serif;
+    margin: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    font-family:'raleway', monospace,  sans-serif;
 
 }
 /*header*/
-
+img{ 
+    width: 100%;
+}
 .logohead{
-    height: 0,5rem;
+    height: auto;
     margin-top: 15px;
     margin-left: 30px;
+    justify-content: left;
 }
+.nav-hebergements{
+    border-top: solid;
+    
+}
+header {
+    width: 98%;
+    max-width: 1920px;
+    max-height: 91px;
+    margin: auto;
+    height: 120px;
+  }
+nav {
+    display: flex;
+    margin-right: 30px;
+    justify-content: space-between;
+    padding-top: ;
+}
+.bloc_intro{
+
+}
+  .bloc_hebergement{
+    max-height: 100%; ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+  }
+  .bloc_hebergement_carteCliquable{
+      background-color: hotpink;
+      box-sizing:border-box;
+      max-height: 100%;
+      max-width: 100%;
+
+  }
+   .bloc_principal{
+    background: #604dab;
+    border-radius: 25px;
+   }
    
 ul {
     list-style-type: none;
@@ -20,11 +64,7 @@ label {
      background-color: hsla(180, 6%, 60%, 0.35);
      padding: 4px;
 }
-nav {
-     display: flex;
-     margin-right: 30px;
-     justify-content: space-between;
-}
+
 nav ul {
     display: flex;
     
@@ -34,15 +74,12 @@ nav li {
     margin-top: 25px;
     
 }
-nav > img{
-   padding-left: 25px;
-   height: 45px;
-   align-items: center;
+.nav_hebergements, .nav_activites{ /*supprimer*/
+    padding-top: 20px;
 }
+
 /*main*/
-body > main:nth-child(2) > div:nth-child(1) > h1:nth-child(1) { /*taille h1 hebergement de reve*/
-    font-size: 1.2em;
-   }
+
 /*bloc filtres*/
 #bloc_filtre{
     display: flex;
@@ -52,23 +89,29 @@ display: inline;
 margin-right: 10px;
 }
 
+/*bloc activités*/
+.bloc_activites{
+    max-width: 5é;
+}
 /****footer****/
 .pied_dePage {
     width: 100%;
-    margin: O auto;
+    margin: 20px 70px 0 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     font-size: 20px;
-    padding: 50px 0 100px;
+    padding: 50px 50px 100px;
+    background-color: #F2F2F2;
+    
 
 }
-.footer_col{
-    
+.footer_col, .Pied_dePage_lists{
+  
+   
 }
 
 .Pied_dePage_lists{
-    display: list-item;
+   
+    padding-inline-start: 0%
 }
-
-
