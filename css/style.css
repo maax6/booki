@@ -4,20 +4,34 @@
     font-family:'raleway', monospace,  sans-serif;
 
 }
-/*header*/
+/*reset/
+ * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+	scroll-behavior: smooth;
+	text-decoration: none;
+} */
+/* header nav+++++++++++++++++ */
+header
 
 .logohead{
     max-height: 75px;
     margin-top: 15px;
     margin-left: 30px;
-
 }
-.nav-hebergements{
+
+img{
+    object-fit: cover;
+}
+ .nav-hebergements{
     border-top: solid;
     
 }
 header {
-    width: 98%;
+    
     max-width: 1920px;
     max-height: 91px;
     margin: auto;
@@ -28,38 +42,73 @@ nav {
     margin-right: 30px;
     justify-content: space-between;
 }
+/*Main******************************/
+body {
+    padding: 20px;
+  }
+/*titre de la page */
+/* .titre_dePage{
 
+} */
+/*bloc filtre*/
+.bloc_filtre{
+    display: flex;
+    flex-direction: row;
+    /* justify-content; */
+    }
+    
+    .liste_filtres{
+    display: flex ;
+    flex-direction: row;
+    align-items: center;
+    
+    }
+
+    .bloc_filtre_lien{
+        display: inline;
+    margin-right: 10px;
+    }
+    
 /*Bloc principal********************/
 .bloc_principal{
     background: #f2f2f2;
     border-radius: 25px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
    }
+   @media
 /*hebergement***********************/
   .bloc_hebergement{
-    min-height: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+  }
+
+.bloc_hebergement_cartes_all{
+    height:100% ;
+    width: 98%;
+    display: flex;
     flex-wrap: wrap;
+    border: 5px solid rgb(111,41,97);
+    justify-content: center;
+
     
     
-  
-  }
+}
+
   .bloc_hebergement_carteCliquable{
-      background-color: whitesmoke;
-      box-sizing:border-box;
-      display: flex;
-      width: 50%;
-      flex-direction: column;
-      padding: 10px;
-      justify-content: center;
-      border-radius: 25px;
-      box-shadow: 3px 3px 3px rgb(225, 225, 225);
-      
-  }
-   
+    display: flex;
+    height: 194px;
+    width: 242px;
+    max-height: fit-content;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px rgb(225, 225, 225);
+    background-color: rgba(111,41,97,.3);
+  border: 2px solid rgba(111,41,97,.5);
+}
+    
+
    .bloc_hebergement_casePhoto{
     height: 73%;
    }
@@ -68,131 +117,119 @@ nav {
     height: inherit;
     margin: 0px;
     object-fit: cover;
-    border-radius:25px ;
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 25px;
    }
+
    /*populaire***********************/
    .bloc_populaire{
-    max-height: 100%; 
-    display: flex;
-    justify-content: center;
+       display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-  
-  }
+    min-width: 510px;
+    }
+
+    .bloc_populaire_cartes_all{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        border: 5px rgb(80, 37, 23);
+    }
+
   .bloc_populaire_carteCliquable{
+     
+    min-width: 100%;
     background-color: #ffffffff;
-    box-sizing:border-box;
     display: flex;
-    width: 50%;
+    max-height:144px ;
     flex-direction: column;
     padding: 10px;
-    justify-content: center;
+    
     border-radius: 25px;
     box-shadow: 3px 3px 3px rgb(225, 225, 225);
-  }
+    }
    
    .bloc_populaire_casePhoto{
-    height: 73%;
-   }
+    height: 50%;
+    max-width: 100%;
+    }
 
    .bloc_populaire_photo{
     width: 100%;
     height: inherit;
     margin: 0px;
     object-fit: cover;
-    border-radius:25px ;
-   }
-     /*bloc secondaire du bas Bloc activités******************/
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 25px;
+    }
+     /*bloc secondaire du bas Bloc activit******/
      .bloc_secondaire{
-         background-color: aqua;
+         height: 626;
+         min-width: 100%;
      }
 
     .bloc_activites{
-    max-height: 100%; 
+    min-width: 100%; 
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
+    background-color: aqua;   
+    margin: 20px 20px;
     }
+
     .bloc_activites_carteCliquable{
     background-color: rgb(33, 58, 224);
     box-sizing:border-box;
     display: flex;
-    width: 50%;
     flex-direction: column;
+    width: 100%;
     padding: 10px;
-    justify-content: center;
+
     border-radius: 25px;
     }
     
     .bloc_activites_casePhoto{
-    height: 73%;
+    height: 262px;
+
     }
+
     .bloc_activites_photo{
     width: 100%;
     height: inherit;
     margin: 0px;
     object-fit: cover;
-    border-radius:25px ;
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 25px;
     }
-ul {
+
+    nav ul {
     list-style-type: none;
     margin-block-start: 0px;
-    
-   
+    display: flex;   
 }
+
 label {
      background-color: hsla(180, 6%, 60%, 0.35);
      padding: 4px;
 }
 
-nav ul {
-    display: flex;
-    
-}
 nav li {
     margin-right: 68px;
     margin-top: 25px;
     
 }
 
-
-
-/*main*/
-
-/*bloc filtres*/
-#bloc_filtre{
-    display: flex;
-}
-.bloc_filtre_lien{
-display: inline;
-margin-right: 10px;
-}
-
-/*bloc activités*/
-.bloc_activites{
-    max-width: 5é;
-}
 /****footer****/
-.pied_dePage {
-    width: 100%;
-    margin: 20px 70px 0 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    font-size: 20px;
-    padding: 50px 50px 100px;
-    background-color: #F2F2F2;
+    .pied_dePage {
+        width: 100%;
+        margin: 20px 70px 0 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        font-size: 20px;
+        padding: 50px 50px 100px;
+        background-color: #F2F2F2;
+    }
+
+    .Pied_dePage_lists{
     
-
-}
-.footer_col, .Pied_dePage_lists{
-  
-   
-}
-
-.Pied_dePage_lists{
-   
-    padding-inline-start: 0%
-}
+        padding-inline-start: 0%
+    }
