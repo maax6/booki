@@ -1,9 +1,9 @@
 /*box sizing appliqué à tous les éléments*/
 *{
     box-sizing: border-box;
-    font-family:'raleway', monospace,  sans-serif;
-
+    font-family:'raleway', monospace,  sans-serif;;
 }
+
 /*reset/
  * {
 	margin: 0;
@@ -15,12 +15,14 @@
 	text-decoration: none;
 } */
 /* header nav+++++++++++++++++ */
-header
+
 
 .logohead{
-    max-height: 75px;
+    max-height: 58px;
     margin-top: 15px;
-    margin-left: 30px;
+    /* margin-inline-start: auto; */
+    margin-left: 50px;
+    padding-top: 1em;
 }
 
 img{
@@ -37,19 +39,36 @@ header {
     margin: auto;
     height: 120px;
   }
+  
+  header a{
+      color: rgb(61,101,252);
+  }
+
 nav {
     display: flex;
     margin-right: 30px;
     justify-content: space-between;
 }
 /*Main******************************/
-body {
-    padding: 20px;
-  }
+ 
+main{ 
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
 /*titre de la page */
-/* .titre_dePage{
+.titre_dePage h1{
+    font-size: 1.67em;
+    font-weight: bold;
+    margin-block-end: 0;
+    margin-block-start: 0.67em;
+    
 
-} */
+}
+main a {
+    color: black;
+}
 /*bloc filtre*/
 .bloc_filtre{
     display: flex;
@@ -65,93 +84,109 @@ body {
     }
 
     .bloc_filtre_lien{
-        display: inline;
+    display: inline;
     margin-right: 10px;
     }
     
 /*Bloc principal********************/
 .bloc_principal{
-    background: #f2f2f2;
-    border-radius: 25px;
+    border: dotted lightgray;
     display: flex;
     flex-direction: row;
+    column-gap: 30px;
+    max-width: 1500px;
+    
+    
+
    }
-   @media
+   
 /*hebergement***********************/
-  .bloc_hebergement{
+
+.bloc_hebergement{
+
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    background: #F2F2F2;
+    border-radius: 25px;
+    /* max-width: 833px; */
+    padding:32px;
+
+}
+
+.bloc_principal_titreSection{
+    margin: 10px 10px;
   }
 
+
 .bloc_hebergement_cartes_all{
-    height:100% ;
-    width: 98%;
+
     display: flex;
     flex-wrap: wrap;
-    border: 5px solid rgb(111,41,97);
     justify-content: center;
-
+    row-gap: 30px;
+    column-gap: 30px;
+    padding: 15px 0;
     
     
 }
 
   .bloc_hebergement_carteCliquable{
     display: flex;
-    height: 194px;
+    background: white;
     width: 242px;
-    max-height: fit-content;
     flex-direction: column;
     padding: 10px;
     border-radius: 25px;
-    box-shadow: 3px 3px 3px rgb(225, 225, 225);
-    background-color: rgba(111,41,97,.3);
-  border: 2px solid rgba(111,41,97,.5);
+    box-shadow: 0px 0px 6px 0px #0000002e;
 }
     
 
    .bloc_hebergement_casePhoto{
-    height: 73%;
+    height: 100px;
    }
    .bloc_hebergement_photo{
     width: 100%;
     height: inherit;
-    margin: 0px;
     object-fit: cover;
     border-top-left-radius: 25px ;
     border-top-right-radius: 25px;
-   }
+}
 
    /*populaire***********************/
    .bloc_populaire{
-       display: flex;
+    display: flex;
     flex-direction: column;
-    min-width: 510px;
-    }
+    width: 30%;
+    min-width: 400px;
+    background: #F2F2F2;
+    border-radius: 25px;
+    padding: 32px;
+    
+}
 
-    .bloc_populaire_cartes_all{
-        width:100%;
-        display: flex;
-        flex-direction: column;
-        border: 5px rgb(80, 37, 23);
-    }
+.bloc_populaire_cartes_all{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    border: 5px rgb(80, 37, 23);
+    padding: 15px;
+    max-height: 619px;
+    row-gap: 30px;
+}
 
   .bloc_populaire_carteCliquable{
      
     min-width: 100%;
     background-color: #ffffffff;
     display: flex;
-    max-height:144px ;
     flex-direction: column;
     padding: 10px;
-    
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: 3px 3px 3px rgb(225, 225, 225);
     }
    
-   .bloc_populaire_casePhoto{
-    height: 50%;
-    max-width: 100%;
-    }
+  
 
    .bloc_populaire_photo{
     width: 100%;
@@ -163,27 +198,32 @@ body {
     }
      /*bloc secondaire du bas Bloc activit******/
      .bloc_secondaire{
-         height: 626;
-         min-width: 100%;
+         
+        
      }
 
     .bloc_activites{
-    min-width: 100%; 
+        min-width: 100%;
     display: flex;
-    flex-wrap: wrap; 
-    background-color: aqua;   
+    flex-direction: column;
+    flex-wrap: wrap;
+    border:dotted red;
     margin: 20px 20px;
     }
 
-    .bloc_activites_carteCliquable{
-    background-color: rgb(33, 58, 224);
-    box-sizing:border-box;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 10px;
+    .bloc_activités_cartes_all{
+        display: flex;
+    }
 
-    border-radius: 25px;
+    .bloc_activites_carteCliquable{
+        background-color: #ffffffff;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px #0000002e;
     }
     
     .bloc_activites_casePhoto{
