@@ -4,6 +4,12 @@
     font-family:'raleway', monospace,  sans-serif;;
 }
 
+
+
+a{
+    text-decoration: none;
+}
+
 /*reset/
  * {
 	margin: 0;
@@ -64,7 +70,7 @@ main{
     padding: 0 2rem;
     box-sizing: border-box;
 }
-/*titre de la page */
+/*titre de la page ****************************/
 .titre_dePage h1{
     font-size: 1.67em;
     font-weight: bold;
@@ -76,7 +82,14 @@ main{
 main a {
     color: black;
 }
-/*bloc filtre*/
+/* Bloc rechercher******************************/
+.bloc_rechercher label i{
+    color: #000000;
+    
+}
+
+
+/*bloc filtre*******************************/
 .bloc_filtre{
     display: flex;
     flex-direction: row;
@@ -87,7 +100,6 @@ main a {
     display: flex ;
     flex-direction: row;
     align-items: center;
-    
     }
 
     .bloc_filtre_lien{
@@ -95,13 +107,17 @@ main a {
     margin-right: 10px;
     }
     
+.fas{
+    color:#3D65FC;
+}
+
 /*Bloc principal********************/
 .bloc_principal{
     border: dotted lightgray;
     display: flex;
     flex-direction: row;
     column-gap: 30px;
-    max-width: 1500px;
+    max-width: 1480px;
     
     
 
