@@ -14,13 +14,20 @@
 	scroll-behavior: smooth;
 	text-decoration: none;
 } */
+
+
+/* .page_entiere{
+    display: flex;
+    flex-direction: column;
+} */
+
 /* header nav+++++++++++++++++ */
 
 
 .logohead{
     max-height: 58px;
     margin-top: 15px;
-    /* margin-inline-start: auto; */
+    margin-inline-start: 0 ;
     margin-left: 50px;
     padding-top: 1em;
 }
@@ -28,10 +35,10 @@
 img{
     object-fit: cover;
 }
- .nav-hebergements{
+ /* .nav-hebergements{
     border-top: solid;
     
-}
+} */
 header {
     
     max-width: 1920px;
@@ -103,7 +110,6 @@ main a {
 /*hebergement***********************/
 
 .bloc_hebergement{
-
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -120,7 +126,6 @@ main a {
 
 
 .bloc_hebergement_cartes_all{
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -134,11 +139,12 @@ main a {
   .bloc_hebergement_carteCliquable{
     display: flex;
     background: white;
-    width: 242px;
+    width: 260px;
     flex-direction: column;
-    padding: 10px;
+    padding: 5px;
     border-radius: 25px;
     box-shadow: 0px 0px 6px 0px #0000002e;
+    height: 192px;
 }
     
 
@@ -153,6 +159,25 @@ main a {
     border-top-right-radius: 25px;
 }
 
+    .bloc_hebergement_caseTexte{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 8px;
+        padding: inherit;
+       }
+
+    .bloc_hebergement_titreCarte{
+        margin:0;
+    }
+   
+    .bloc_hebergement_prix{
+        margin:0;
+    }
+    
+
+
+
    /*populaire***********************/
    .bloc_populaire{
     display: flex;
@@ -162,10 +187,10 @@ main a {
     background: #F2F2F2;
     border-radius: 25px;
     padding: 32px;
-    
+
 }
 
-.bloc_populaire_cartes_all{
+    .bloc_populaire_cartes_all{
     width:100%;
     display: flex;
     flex-direction: column;
@@ -175,18 +200,21 @@ main a {
     row-gap: 30px;
 }
 
-  .bloc_populaire_carteCliquable{
-     
-    min-width: 100%;
-    background-color: #ffffffff;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border-radius: 20px;
-    box-shadow: 3px 3px 3px rgb(225, 225, 225);
-    }
+    .bloc_populaire_carteCliquable{
+min-width: 100%;
+background-color: #ffffffff;
+display: flex;
+flex-direction: row;
+padding: 10px;
+border-radius: 20px;
+box-shadow: 3px 3px 3px rgb(225, 225, 225);
+height: 175px;
+}
    
-  
+    .bloc_populaire_casePhoto{
+    width: 150px;
+    height: 151px;
+    }
 
    .bloc_populaire_photo{
     width: 100%;
@@ -195,12 +223,24 @@ main a {
     object-fit: cover;
     border-top-left-radius: 25px ;
     border-top-right-radius: 25px;
+
     }
+
+    .bloc_populaire_caseTexte{
+    margin: 0;
+    padding: 10px;
+    }
+
+    .bloc_populaire_titreCarte{
+    margin:0;
+    }
+    .bloc_populaire_prix
+
+
+
+
      /*bloc secondaire du bas Bloc activit******/
-     .bloc_secondaire{
-         
-        
-     }
+     
 
     .bloc_activites{
         min-width: 100%;
