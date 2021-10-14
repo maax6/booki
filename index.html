@@ -33,13 +33,10 @@
                 </ul>
             </nav>
         </header>
-        <!--header-->
-
-
-
-
-
+        
+        
         <!--Main-->
+
         <main>
             <div class="titre_dePage">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -48,25 +45,65 @@
              <!--Zone de recherche-->
             <div class="bloc_rechercher">
                 <form method="post" action="traitement.php">
-                    <div class="bloc-rechercher">
-                        <label for="Ville"><i class="fas fa-map-marker-alt"></i></label>
-                        <input type="search" name="zone" id="Ville" placeholder="Marseille, France" size="16" >
+                    <div class="bloc_rechercher_formulaire formulaire ligne_formulaire">
+                        <label for="ville">
+                            <i class="icone_position fas fa-map-marker-alt"> 
+                                <!--Ici, le texte du label c'est l'iconne Font Awesome présente dans la classe du label, pour un autre formulaire on remplace ce commentaire par le nom du label souhaité entre les balises <i> pourquoi pas entre des balises <span> ?  -->
+                            </i>
+                        </label> 
+                        <input type="search" name="zone" class="champ_de_recherche" placeholder="Marseille, France" size="16" >
                         <input class="bouton_rechercher" type="submit" value="Rechercher">
                     </div>
                 </form>
-            
-             <!--Filtres-->
+
                 <section class="bloc_filtre">
                     <h2 class="bloc_filtre_titre">Filtres</h2>
-                    <ul class="liste_filtres">
-                        <li class="bloc_filtre_lien"><a href="#"><i class="fas fa-money-bill-wave"></i>Économique</a></li>
-                        <li class="bloc_filtre_lien"><a href="#"><i class="fas fa-child"></i>Familial</a></li>
-                        <li class="bloc_filtre_lien"><a href="#"><i class="fas fa-heart"></i>Romantique</a></li>
-                        <li class="bloc_filtre_lien"><a href="#"><i class="fas fa-dog"></i>Animaux autorisés</a></li>
+                    <ul class="bloc_filtre_liste">
+
+                        <li class="bloc_filtre_lien">
+                            <a href="#">   
+                                <div class="bloc_filtre_genre">
+                                    <div class="bloc_filtre_conteneur_icone">
+                                        <i class="bloc_filtre_icone_ronde fas fa-money-bill-wave"></i>
+                                    </div>
+                                    <span class="bloc_filtre_conteneur_texte">Économique</span>
+                                </div>
+                            </a>
+                        </li>  
+                        <li class="bloc_filtre_lien">
+                            <a href="#">   
+                                <div class="bloc_filtre_genre">
+                                    <div class="bloc_filtre_conteneur_icone">
+                                        <i class="bloc_filtre_icone_ronde fas fa-child"></i>
+                                    </div>
+                                    <span class="bloc_filtre_conteneur_texte">Familial</span>
+                                </div>
+                            </a>
+                        </li>  
+                        <li class="bloc_filtre_lien">
+                            <a href="#">   
+                                <div class="bloc_filtre_genre">
+                                    <div class="bloc_filtre_conteneur_icone">
+                                        <i class="bloc_filtre_icone_ronde fas fa-heart"></i>
+                                    </div>
+                                    <span class="bloc_filtre_conteneur_texte">Romantique</span>
+                                </div>
+                            </a>
+                        </li>  
+                        <li class="bloc_filtre_lien">
+                            <a href="#">   
+                                <div class="bloc_filtre_genre">
+                                    <div class="bloc_filtre_conteneur_icone">
+                                        <i class="bloc_filtre_icone_ronde fas fa-dog"></i>
+                                    </div>
+                                    <span class="bloc_filtre_conteneur_texte">Animaux autorisés</span>
+                                </div>
+                            </a>
+                        </li>  
                     </ul>
                 </section>
             </div>
-            <div>
+            <div class="bloc_info">
                 <p><i class="fas fa-info"></i>  Plus de 500 logmements sont disponibles dans cette ville</p>
             </div>
              <!-- section principale-->
@@ -89,7 +126,7 @@
                                     <i class="fas fa-star bloc_principal_note_etoilePleine"></i>
                                     <i class="fas fa-star bloc_principal_note_etoilePleine"></i>
                                     <i class="fas fa-star bloc_principal_note_etoilePleine"></i>
-                                    <i class="far fa-star bloc_principal_note_etoileVide"  ></i>
+                                    <i class="fas fa-star bloc_principal_note_etoileVide"  ></i>
                                 </div> 
                             </div>
                         </a>
@@ -125,7 +162,7 @@
                                     <i class="fas fa-star bloc_principal_note_etoilePleine"></i>
                                     <i class="fas fa-star bloc_principal_note_etoilePleine"></i>
                                     <i class="fas fa-star bloc_principal_note_etoilePleine"></i>
-                                    <i class="far fa-star bloc_principal_note_etoileVide"  ></i>
+                                    <i class="fas fa-star bloc_principal_note_etoileVide"  ></i>
                                 </div> 
                             </div>
                         </a>
@@ -142,8 +179,8 @@
                                     <i class="fas fa-star bloc_principal_note_etoilePleine"></i>
                                     <i class="fas fa-star bloc_principal_note_etoilePleine"></i>
                                     <i class="fas fa-star bloc_principal_note_etoilePleine"></i>
-                                    <i class="far fa-star bloc_principal_note_etoileVide"  ></i>
-                                    <i class="far fa-star bloc_principal_note_etoileVide"  ></i>
+                                    <i class="fas fa-star bloc_principal_note_etoileVide"  ></i>
+                                    <i class="fas fa-star bloc_principal_note_etoileVide"  ></i>
                                 </div> 
                             </div>
                         </a>
@@ -161,7 +198,7 @@
                                     <i class="fas fa-star bloc_principal_note_etoilePleine"></i>
                                     <i class="fas fa-star bloc_principal_note_etoilePleine"></i>
                                     <i class="fas fa-star bloc_principal_note_etoilePleine"></i>
-                                    <i class="far fa-star bloc_principal_note_etoileVide"  ></i>
+                                    <i class="fas fa-star bloc_principal_note_etoileVide"  ></i>
                                 </div> 
                             </div>
                         </a>
@@ -225,7 +262,7 @@
                                     <i class="fas fa-star bloc_principal_note_etoilePleine"></i>
                                     <i class="fas fa-star bloc_principal_note_etoilePleine"></i>
                                     <i class="fas fa-star bloc_principal_note_etoilePleine"></i>
-                                    <i class="far fa-star bloc_principal_note_etoileVide"  ></i>
+                                    <i class="fas fa-star bloc_principal_note_etoileVide"  ></i>
                                 </div> 
                             </div>
                         </a>
@@ -243,7 +280,7 @@
                                     <i class="fas fa-star bloc_principal_note_etoilePleine"></i>
                                     <i class="fas fa-star bloc_principal_note_etoilePleine"></i>
                                     <i class="fas fa-star bloc_principal_note_etoilePleine"></i>
-                                    <i class="far fa-star bloc_principal_note_etoileVide"  ></i>
+                                    <i class="fas fa-star bloc_principal_note_etoileVide"  ></i>
                                 </div> 
                             </div>
                         </a>

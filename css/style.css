@@ -70,9 +70,9 @@ main{
     padding: 0 2rem;
     box-sizing: border-box;
 }
-/*titre de la page ****************************/
+/*titre de la page ***************/
 .titre_dePage h1{
-    font-size: 1.67em;
+    font-size: 1.4em;
     font-weight: bold;
     margin-block-end: 0;
     margin-block-start: 0.67em;
@@ -82,45 +82,129 @@ main{
 main a {
     color: black;
 }
-/* Bloc rechercher******************************/
+
+/* Bloc rechercher*****************/
+.formulaire{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formulaire label{
+    background-color: #F2F2F2;
+    width: 51px;
+    height:51px;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .bloc_rechercher label i{
+    /* display: flex; */
     color: #000000;
+    font-size:1.1em;
+    /* height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center; */
     
 }
 
+.champ_de_recherche{
+        height: 51px;
+        min-width: 234px;
+        border-right: none;
+        border-left: none;
+        border-top: 1px solid #F2F2F2;
+        border-bottom: 1px solid #F2F2F2  ;
+        font-weight: bold;
+        padding: 0 20px;
+        font-size: 1.1em;
+    }
+    input::placeholder{  /*Couleur du texte a l'interieur de l'input, ::placerholder est un pseudo élément. (Chercher comment cible l'input de ce bloc plus précisément)*/
+        color:black
+    }
 
-/*bloc filtre*******************************/
+.bouton_rechercher{
+    height: 51px;
+    min-width: 134px ;
+    background-color: #3D65FC;
+    color:white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    font-size: 1.1em;
+    }
+
+    
+
+/*bloc filtre**********************/
 .bloc_filtre{
     display: flex;
     flex-direction: row;
-    /* justify-content; */
+    align-items: baseline;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
     }
+
+.bloc_filtre_titre{
+    font-size: 1.1em;
+    padding: 28px 10px 0 7px;
+    }
+
+
     
-    .liste_filtres{
+.bloc_filtre_liste{
     display: flex ;
     flex-direction: row;
     align-items: center;
-    }
-
-    .bloc_filtre_lien{
-    display: inline;
-    margin-right: 10px;
+    flex-wrap: wrap;
     }
     
+
+
+
+.bloc_filtre_lien{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    font-size: 1.2em;
+    
+    }
+    
+    .bloc_filtre_genre{
+        border: dotted 1PX blue;
+        display: flex;
+        
+     
+        }
+
+    
+
+/* Etoiles Notes */
+/*Icones dont étoiles pleines*/
 .fas{
     color:#3D65FC;
 }
+/* etoiles vides seulement ( la couleur des étoiles pleines vient est hérité du générique .fas */
+
+.bloc_principal_note_etoileVide{
+    color:#D9D9D9
+}
+
+
 
 /*Bloc principal********************/
 .bloc_principal{
-    border: dotted lightgray;
+    
     display: flex;
     flex-direction: row;
     column-gap: 30px;
     max-width: 1480px;
-    
-    
-
    }
    
 /*hebergement***********************/
@@ -158,7 +242,7 @@ main a {
     width: 260px;
     flex-direction: column;
     padding: 5px;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: 0px 0px 6px 0px #0000002e;
     height: 192px;
 }
@@ -171,8 +255,8 @@ main a {
     width: 100%;
     height: inherit;
     object-fit: cover;
-    border-top-left-radius: 25px ;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px;
 }
 
     .bloc_hebergement_caseTexte{
@@ -185,6 +269,7 @@ main a {
 
     .bloc_hebergement_titreCarte{
         margin:0;
+        padding-top: 3px;
     }
    
     .bloc_hebergement_prix{
@@ -206,12 +291,11 @@ main a {
 
 }
 
-    .bloc_populaire_cartes_all{
-    width:100%;
+    .bloc_populaire_cartes_all {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    border: 5px rgb(80, 37, 23);
-    padding: 15px;
+    padding: 15px 0;
     max-height: 619px;
     row-gap: 30px;
 }
@@ -221,10 +305,9 @@ min-width: 100%;
 background-color: #ffffffff;
 display: flex;
 flex-direction: row;
-padding: 10px;
+padding: 5px;
 border-radius: 20px;
 box-shadow: 3px 3px 3px rgb(225, 225, 225);
-height: 175px;
 }
    
     .bloc_populaire_casePhoto{
@@ -237,25 +320,31 @@ height: 175px;
     height: inherit;
     margin: 0px;
     object-fit: cover;
-    border-top-left-radius: 25px ;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 
     }
 
     .bloc_populaire_caseTexte{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
     margin: 0;
     padding: 10px;
+    row-gap: 5px;
     }
 
     .bloc_populaire_titreCarte{
     margin:0;
     }
-    .bloc_populaire_prix
+    .bloc_populaire_prix{
+        margin: 0;
+    }
 
 
 
 
-     /*bloc secondaire du bas Bloc activit******/
+     /*bloc secondaire du bas Bloc activités******************************/
      
 
     .bloc_activites{
@@ -299,7 +388,7 @@ height: 175px;
     nav ul {
     list-style-type: none;
     margin-block-start: 0px;
-    display: flex;   
+    display: flex;  
 }
 
 label {
