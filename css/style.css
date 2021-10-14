@@ -123,7 +123,8 @@ main a {
         font-size: 1.1em;
     }
     input::placeholder{  /*Couleur du texte a l'interieur de l'input, ::placerholder est un pseudo élément. (Chercher comment cible l'input de ce bloc plus précisément)*/
-        color:black
+        color:black;
+        font: bold;
     }
 
 .bouton_rechercher{
@@ -157,33 +158,59 @@ main a {
 
     
 .bloc_filtre_liste{
-    display: flex ;
+    display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+    row-gap: 15px;
     }
     
-
-
-
-.bloc_filtre_lien{
+.bloc_filtre_genre{
     
+    display: flex;
+    border: solid 2px #D9D9D9;
+    font-weight: bold;
+    border-radius: 34px;
+    
+    }
+.bloc_filtre_lien{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-right: 10px;
-    font-size: 1.2em;
+    
     
     }
-    
-    .bloc_filtre_genre{
-        border: dotted 1PX blue;
-        display: flex;
-        
-     
-        }
 
+.bloc_filtre_conteneur_icone{
+    background: #DEEBFF;
+    padding: 0.7em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5em;
+    margin: -2px;
     
+    }
+
+    /* Taille icones  */
+.bloc_filtre i{
+    font-size: 78%;
+    }
+
+.bloc_filtre_conteneur_texte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 13px;
+    
+}
+   
+
+
+
 
 /* Etoiles Notes */
 /*Icones dont étoiles pleines*/
@@ -217,8 +244,7 @@ main a {
     border-radius: 25px;
     /* max-width: 833px; */
     padding:32px;
-
-}
+    }
 
 .bloc_principal_titreSection{
     margin: 10px 10px;
@@ -288,7 +314,10 @@ main a {
     background: #F2F2F2;
     border-radius: 25px;
     padding: 32px;
+}
 
+.fa-chart-line{
+    color: black;
 }
 
     .bloc_populaire_cartes_all {
