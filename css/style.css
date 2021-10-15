@@ -2,9 +2,8 @@
 *{
     box-sizing: border-box;
     font-family:'raleway', monospace,  sans-serif;;
+    list-style-type: none;
 }
-
-
 
 a{
     text-decoration: none;
@@ -28,7 +27,22 @@ a{
 } */
 
 /* header nav+++++++++++++++++ */
+nav ul {
+    
+    margin-block-start: 0px;
+    display: flex;  
+}
 
+label {
+     background-color: hsla(180, 6%, 60%, 0.35);
+     padding: 4px;
+}
+
+nav li {
+    margin-right: 68px;
+    margin-top: 25px;
+    
+}
 
 .logohead{
     max-height: 58px;
@@ -46,10 +60,6 @@ img{
     
 } */
 header {
-    
-    max-width: 1920px;
-    max-height: 91px;
-    margin: auto;
     height: 120px;
   }
   
@@ -64,11 +74,11 @@ nav {
 }
 /*Main******************************/
  
-main{ 
-    max-width: 1440px;
+main{
     margin: auto;
     padding: 0 2rem;
     box-sizing: border-box;
+    
 }
 /*titre de la page ***************/
 .titre_dePage h1{
@@ -230,10 +240,11 @@ main a {
     
     display: flex;
     flex-direction: row;
-    column-gap: 30px;
-    max-width: 1480px;
+    gap:30px;
+    margin: 30px 0 50px 0;
    }
    
+
 /*hebergement***********************/
 
 .bloc_hebergement{
@@ -263,14 +274,15 @@ main a {
 }
 
   .bloc_hebergement_carteCliquable{
-    display: flex;
+        display: flex;
     background: white;
-    width: 260px;
+    min-width: 200px;
     flex-direction: column;
     padding: 5px;
     border-radius: 20px;
     box-shadow: 0px 0px 6px 0px #0000002e;
     height: 192px;
+    width: 29%;
 }
     
 
@@ -330,23 +342,25 @@ main a {
 }
 
     .bloc_populaire_carteCliquable{
-min-width: 100%;
-background-color: #ffffffff;
-display: flex;
-flex-direction: row;
-padding: 5px;
-border-radius: 20px;
-box-shadow: 3px 3px 3px rgb(225, 225, 225);
+        min-width: 100%;
+        background-color: #ffffffff;
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 3px rgb(225, 225, 225);
+        min-height: 130px;
+        max-height: 130px;
 }
    
     .bloc_populaire_casePhoto{
-    width: 150px;
-    height: 151px;
+        width: 35%;
+    height: 100%;
     }
 
    .bloc_populaire_photo{
     width: 100%;
-    height: inherit;
+    height: 100%;
     margin: 0px;
     object-fit: cover;
     border-top-left-radius: 20px;
@@ -365,9 +379,10 @@ box-shadow: 3px 3px 3px rgb(225, 225, 225);
 
     .bloc_populaire_titreCarte{
     margin:0;
+    max-width: 185px;
     }
     .bloc_populaire_prix{
-        margin: 0;
+        margin: 0 0 20px 0;
     }
 
 
@@ -380,13 +395,12 @@ box-shadow: 3px 3px 3px rgb(225, 225, 225);
         min-width: 100%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     border:dotted red;
-    margin: 20px 20px;
     }
 
     .bloc_activités_cartes_all{
         display: flex;
+        flex-wrap:wrap;
     }
 
     .bloc_activites_carteCliquable{
@@ -414,22 +428,7 @@ box-shadow: 3px 3px 3px rgb(225, 225, 225);
     border-top-right-radius: 25px;
     }
 
-    nav ul {
-    list-style-type: none;
-    margin-block-start: 0px;
-    display: flex;  
-}
 
-label {
-     background-color: hsla(180, 6%, 60%, 0.35);
-     padding: 4px;
-}
-
-nav li {
-    margin-right: 68px;
-    margin-top: 25px;
-    
-}
 
 /****footer****/
     .pied_dePage {
