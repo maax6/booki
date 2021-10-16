@@ -1,9 +1,9 @@
-/*box sizing appliqué à tous les éléments*/
-*{
+
+*{/*box sizing appliqué à tous les éléments*/
     box-sizing: border-box;
     font-family:'raleway', monospace,  sans-serif;;
     list-style-type: none;
-}
+}s
 
 a{
     text-decoration: none;
@@ -172,7 +172,7 @@ main a {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    row-gap: 15px;
+    gap: 24px;
     }
     
 .bloc_filtre_genre{
@@ -217,12 +217,8 @@ main a {
     padding: 0 13px;
     
 }
-   
 
 
-
-
-/* Etoiles Notes */
 /*Icones dont étoiles pleines*/
 .fas{
     color:#3D65FC;
@@ -233,17 +229,34 @@ main a {
     color:#D9D9D9
 }
 
+/* ligne info avec icone i  */
+.bloc_info{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:12px;
+}
+
+#icone_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    border: solid 2px #D9D9D9;
+    border-radius: 50%;
+    
+}
 
 
 /*Bloc principal********************/
 .bloc_principal{
-    
     display: flex;
     flex-direction: row;
     gap:30px;
     margin: 30px 0 50px 0;
-   }
-   
+}
+
 
 /*hebergement***********************/
 
@@ -259,6 +272,7 @@ main a {
 
 .bloc_principal_titreSection{
     margin: 10px 10px;
+    align-items: baseline;
   }
 
 
@@ -328,8 +342,13 @@ main a {
     padding: 32px;
 }
 
+.bloc_populaire h2{
+    display: flex;
+   justify-content: space-between;
+}
 .fa-chart-line{
     color: black;
+   
 }
 
     .bloc_populaire_cartes_all {
@@ -396,11 +415,20 @@ main a {
     display: flex;
     flex-direction: column;
     border:dotted red;
+
+     
     }
 
     .bloc_activités_cartes_all{
+        min-width: 100%;
+        height: 520px;
         display: flex;
-        flex-wrap:wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 40px;
     }
 
     .bloc_activites_carteCliquable{
@@ -409,7 +437,6 @@ main a {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 10px;
         border-radius: 20px;
         box-shadow: 0 0 20px #0000002e;
     }
@@ -440,9 +467,21 @@ main a {
         font-size: 20px;
         padding: 50px 50px 100px;
         background-color: #F2F2F2;
+       
     }
 
-    .Pied_dePage_lists{
-    
-        padding-inline-start: 0%
+    .pied_dePage_colones{
+        padding-inline-start: 0%;
+        gap: 15px;
     }
+    
+    .pied_dePage a{
+        color:black ;
+        font-size: 0.8em;
+    }
+
+    
+    .pied_dePage_colones li{
+        height: 33px;
+    }
+    
