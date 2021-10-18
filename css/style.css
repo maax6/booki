@@ -36,6 +36,7 @@ nav li {
     margin-inline-start: 0 ;
     margin-left: 50px;
     padding-top: 1em;
+    margin-top: 30px;
 }
 
 img{
@@ -58,6 +59,10 @@ nav {
     margin-right: 30px;
     justify-content: space-between;
 }
+
+.nav_hebergements, .nav_activites{
+    padding-top: 52px;
+}
 /*Main******************************/
  
 main{
@@ -67,13 +72,26 @@ main{
     
 }
 /*titre de la page ***************/
+
+.page_entiere{
+    margin: 0 25px;
+}
+
+
 .titre_dePage h1{
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: bold;
     margin-block-end: 0;
-    margin-block-start: 0.67em;
-    
+    margin-block-start: 0.67em;    
 }
+
+.titre_dePage p {
+    margin-top: 3px;
+    font-weight: lighter;
+    font-size: 18px;
+
+}
+
 main a {
     color: black;
 }
@@ -96,8 +114,8 @@ nav a {
 
 .formulaire label{
     background-color: #F2F2F2;
-    width: 51px;
-    height:51px;
+    width: 60px;
+    height: 60px;
     border-top-left-radius: 20%;
     border-bottom-left-radius: 20%;
     display: flex;
@@ -108,7 +126,7 @@ nav a {
 .bloc_rechercher label i{
     /* display: flex; */
     color: #000000;
-    font-size:1.1em;
+    font-size:1.4em;
     /* height: 100%;
     width: 100%;
     justify-content: center;
@@ -117,7 +135,7 @@ nav a {
 }
 
 .champ_de_recherche{
-        height: 51px;
+        height: 60px;
         min-width: 234px;
         border-right: none;
         border-left: none;
@@ -133,8 +151,8 @@ nav a {
     }
 
 .bouton_rechercher{
-    height: 51px;
-    min-width: 134px ;
+    height: 60px;
+    min-width: 161px ;
     background-color: #3D65FC;
     color:white;
     font-weight: bold;
@@ -230,7 +248,7 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 13px;
+    padding: 0 18px;
     
 }
 
@@ -565,7 +583,9 @@ height: 42%;
     .pied_dePage_colones li{
         height: 33px;
     }
-    
+    .footer_col{
+        margin-right:50px;
+    }
 
     @media screen and {
         
