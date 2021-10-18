@@ -28,8 +28,8 @@
             <nav class="nav">
                 <img class="logohead" src="images/logo/Booki.png" alt="Logo Booki">
                 <ul class="nav-ul" >
-                    <li class="nav-hebergements"><a href="#bloc_hebergement">Hébergements</a></li>
-                    <li class="nav-activites"><a href="#bloc_activites">Activités</a></li>
+                    <li class="nav_hebergements"><a href="#bloc_hebergement">Hébergements</a></li>
+                    <li class="nav_activites"><a href="#bloc_activites">Activités</a></li>
                 </ul>
             </nav>
         </header>
@@ -52,7 +52,7 @@
                                     <!--Ici, le texte du label c'est l'iconne Font Awesome présente dans la classe du label, pour un autre formulaire on remplace ce commentaire par le nom du label souhaité entre les balises <i> pourquoi pas entre des balises <span> ?  -->
                                 </i>
                             </label> 
-                            <input type="search" name="zone" class="champ_de_recherche" placeholder="Marseille, France" size="16" >
+                            <input type="search" name="zone" id="ville" class="champ_de_recherche" placeholder="Marseille, France" size="16" >
                             <input class="bouton_rechercher" type="submit" value="Rechercher">
                         </div>
                     </form>
@@ -297,7 +297,7 @@
                 <div class="bloc_activites" id="bloc_activites">
                     <h2 class="bloc_principal_titreSection">Activités à Marseille</h2>
                     <div class="bloc_activités_cartes_all">
-                        <a class="bloc_activites_carteCliquable" href="#">
+                        <a class="bloc_activites_carteCliquable carte1 carte_haute" href="#">
                             <div class="bloc_activites_casePhoto">
                                 <img class="bloc_activites_photo" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo du port de marseille avec vue sur la basilique Notre Dame de la Garde">
                             </div>
@@ -305,7 +305,7 @@
                                 <h4 class="bloc_activites_titreCarte">Vieux port</h4>
                             </div>
                         </a>
-                        <a class="bloc_activites_carteCliquable" href="#">
+                        <a class="bloc_activites_carteCliquable carte2" href="#">
                             <div class="bloc_activites_casePhoto">
                                 <img class="bloc_activites_photo" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo du fort de Pomègues">
                             </div>
@@ -313,23 +313,7 @@
                                 <h4 class="bloc_activites_titreCarte">Fort de Pomègues</h4>
                             </div>
                         </a>
-                        <a class="bloc_activites_carteCliquable" href="#">
-                            <div class="bloc_activites_casePhoto">
-                                <img class="bloc_activites_photo" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo vue sur la mer des calanques">
-                            </div>
-                            <div class="bloc_activites_caseTexte">
-                                <h4 class="bloc_activites_titreCarte">Parc National des Calanques</h4>
-                            </div>
-                        </a>
-                        <a class="bloc_activites_carteCliquable" href="#">
-                            <div class="bloc_activites_casePhoto">
-                                <img class="bloc_activites_photo" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo en contre-plongée sur La basique notre dame de la garde">
-                            </div>
-                            <div class="bloc_activites_caseTexte">
-                                <h4 class="bloc_activites_titreCarte">Notre-Dame-de-la-Garde</h4>
-                            </div>
-                        </a>
-                        <a class="bloc_activites_carteCliquable" href="#">
+                        <a class="bloc_activites_carteCliquable carte3" href="#">
                             <div class="bloc_activites_casePhoto">
                                 <img class="bloc_activites_photo" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo paysage des Îles du Frioul">
                             </div>
@@ -337,7 +321,23 @@
                                 <h4 class="bloc_activites_titreCarte">Îles du Frioul</h4>
                             </div>
                         </a>
-                        <a class="bloc_activites_carteCliquable" href="#">
+                        <a class="bloc_activites_carteCliquable carte4 carte_haute" href="#">
+                            <div class="bloc_activites_casePhoto">
+                                <img class="bloc_activites_photo" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo vue sur la mer des calanques">
+                            </div>
+                            <div class="bloc_activites_caseTexte">
+                                <h4 class="bloc_activites_titreCarte">Parc National des Calanques</h4>
+                            </div>
+                        </a>
+                        <a class="bloc_activites_carteCliquable carte5" href="#">
+                            <div class="bloc_activites_casePhoto">
+                                <img class="bloc_activites_photo" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo en contre-plongée sur La basique notre dame de la garde">
+                            </div>
+                            <div class="bloc_activites_caseTexte">
+                                <h4 class="bloc_activites_titreCarte">Notre-Dame-de-la-Garde</h4>
+                            </div>
+                        </a>
+                        <a class="bloc_activites_carteCliquable carte6" href="#">
                             <div class="bloc_activites_casePhoto">
                                 <img class="bloc_activites_photo" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo du jardin des eaux et de l'édifice du parc Longchamp">
                             </div>
