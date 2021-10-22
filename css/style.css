@@ -626,6 +626,7 @@ height: 42%;
 
         nav li {
         padding:0;
+        width: 50vh;
         }
         #conteneur_logo{
         display: flex;
@@ -646,6 +647,7 @@ height: 42%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-right: 0;
         }
         .nav_hebergements, .nav_activites{
             padding-top: 0;
@@ -657,7 +659,20 @@ height: 42%;
             padding-top: 0;
         }
 
-
+        nav ul{
+            width: 100%;
+            margin-block-start: 0px;
+            padding-inline-start: 0px;
+        }
+        .nav_activites:hover, .nav_hebergements:hover {
+            border-top: none;
+            border-bottom: solid #3D65FC 2px;
+            /* align-items: center; */
+        }
+          nav a:hover {
+            color:#3D65FC ;
+            
+          }
 
     }
 
