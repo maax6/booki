@@ -85,6 +85,15 @@ main{
 main a {
     color: black;
 }
+/*Icones dont étoiles pleines*/
+.fas{
+    color:#3D65FC;
+}
+/* etoiles vides seulement ( la couleur des étoiles pleines vient est hérité du générique .fas */
+
+.note_etoileVide{
+    color:#D9D9D9
+}
 
 
 /* Bloc rechercher*****************/
@@ -96,8 +105,8 @@ main a {
 
 .formulaire label{
     background-color: #F2F2F2;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-top-left-radius: 20%;
     border-bottom-left-radius: 20%;
     display: flex;
@@ -106,18 +115,14 @@ main a {
 }
 
 .bloc_rechercher label i{
-    /* display: flex; */
     color: #000000;
-    font-size: 22px;
-    /* height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center; */
+    font-size: large;
+    
     
 }
 
 .champ_de_recherche{
-        height: 60px;
+        height: 50px;
         min-width: 234px;
         border-right: none;
         border-left: none;
@@ -127,13 +132,13 @@ main a {
         padding: 0 20px;
         font-size: 1.1em;
     }
+    
     input::placeholder{  /*Couleur du texte a l'interieur de l'input, ::placerholder est un pseudo élément. (Chercher comment cible l'input de ce bloc plus précisément)*/
         color:black;
-        font: bold;
     }
 
 .bouton_rechercher{
-    height: 60px;
+    height: 50px;
     min-width: 161px ;
     background-color: #3D65FC;
     color:white;
@@ -152,10 +157,11 @@ main a {
 
     
  #btn_loupe{
-     height: 60px;
-     width: 60px;
+     height: 50px;
+     width: 50px;
      border-radius: 15px 15px 15px 15px  ;
      border: none;
+     background-color: #3D65FC;
  }
 
  .conteneur_btn{
@@ -164,11 +170,11 @@ main a {
      display: flex;
      justify-content: center;
      align-items: center;
-
  }
 
 .fa-search {
     color: white;
+    font-size: large;
 }
 
 /*bloc filtre**********************/
@@ -258,15 +264,6 @@ main a {
 
 
 
-/*Icones dont étoiles pleines*/
-.fas{
-    color:#3D65FC;
-}
-/* etoiles vides seulement ( la couleur des étoiles pleines vient est hérité du générique .fas */
-
-.bloc_principal_note_etoileVide{
-    color:#D9D9D9
-}
 
 /* ligne info avec icone i  */
 .bloc_info{
@@ -539,7 +536,7 @@ main a {
     }
 
 .carte_haute{
-   height: 95%;
+    height: 95%;
 }
 
 .carte2{
@@ -591,10 +588,6 @@ height: 42%;
     .pied_dePage_colones li{
         height: 30px;
     }
-    /* .footer_col{
-        padding: 25px 113px 25px 70px;
-    } */
-
     /* ******************************   MEDIA QUERRIES   ****************************************** */
  
 
