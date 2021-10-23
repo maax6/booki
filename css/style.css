@@ -66,8 +66,7 @@ nav a {
 /*Main******************************/
 main{
     margin: auto;
-    padding: 0 2rem;
-    box-sizing: border-box; 
+    padding: 0 20px;
 }
 /*titre de la page ***************/
 
@@ -100,15 +99,15 @@ main a {
 
 .formulaire{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .formulaire label{
     background-color: #F2F2F2;
     width: 50px;
     height: 50px;
-    border-top-left-radius: 20%;
-    border-bottom-left-radius: 20%;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +131,7 @@ main a {
         padding: 0 20px;
         font-size: 1.1em;
     }
-    
+
     input::placeholder{  /*Couleur du texte a l'interieur de l'input, ::placerholder est un pseudo élément. (Chercher comment cible l'input de ce bloc plus précisément)*/
         color:black;
     }
@@ -157,6 +156,7 @@ main a {
 
     
  #btn_loupe{
+     display: none;
      height: 50px;
      width: 50px;
      border-radius: 15px 15px 15px 15px  ;
@@ -197,9 +197,8 @@ main a {
 .bloc_filtre_liste{
     display: flex;
     flex-direction: row;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 16px;
     }
     
 .bloc_filtre_genre{
@@ -277,8 +276,8 @@ main a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 25px;
-    width: 25px;
+    min-height: 25px;
+    min-width: 25px;
     border: solid 2px #D9D9D9;
     border-radius: 50%;
 }
@@ -591,7 +590,7 @@ height: 42%;
     /* ******************************   MEDIA QUERRIES   ****************************************** */
  
 
-    @media screen and (max-width:1058px){
+@media screen and (max-width:1058px){
 
         .pied_dePage_all_col{
             justify-content: flex-start;
@@ -600,7 +599,7 @@ height: 42%;
           }
     }
 
-    @media screen and (max-width:992px){
+@media screen and (max-width:992px){
 
         
         .bloc_principal{
@@ -628,67 +627,103 @@ height: 42%;
         
     }
 
-    @media screen and (max-width:768px)  {
-         /*******full*******768px
-                ***************** 
-                    ***************/
-        .page_entiere{
-            margin: 0;
-        }
+@media screen and (max-width:768px)  {
+    /*pas de marge  en version mobile*/
+    .page_entiere{
+        margin: 0;
+    }
+        
+    main{
+        margin: auto;
+        padding: 0px;
+    }
 
-         /*******NAV*******768px
-                ***************** 
-                    ***************/
+        /*******NAV*******768px
+            ***************** 
+                ***************/
 
-        nav li {
+    nav li {
         padding:0;
         width: 50vh;
-        }
-        #conteneur_logo{
+    }
+    #conteneur_logo{
         display: flex;
         justify-content: center;
-        }
+    }
 
-        .logohead {
+    .logohead {
         max-height: 4rem;
         margin-inline-start: 0;
         margin-left: 40px;
         padding-top: 0;
         margin-top: 30px;
-        }
-        header {
+    }
+    header {
         height: 157px;
-        }
-        nav {
+    }
+    nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-right: 0;
-        }
-        .nav_hebergements, .nav_activites{
-            padding-top: 0;
-        }
-        .nav_activites{
-            padding-top: 0;
-        }
-        .nav_hebergements{
-            padding-top: 0;
-        }
-
-        nav ul{
-            width: 100%;
-            margin-block-start: 0px;
-            padding-inline-start: 0px;
-        }
-        .nav_activites:hover, .nav_hebergements:hover {
-            border-top: none;
-            border-bottom: solid #3D65FC 2px;
-            /* align-items: center; */
-        }
-          nav a:hover {
-            color:#3D65FC ;
-            
-          }
-
+    }
+    .nav_hebergements, .nav_activites{
+        padding-top: 0;
+    }
+    .nav_activites{
+        padding-top: 0;
+    }
+    .nav_hebergements{
+        padding-top: 0;
     }
 
+    nav ul{
+        width: 100%;
+        margin-block-start: 0px;
+        padding-inline-start: 0px;
+    }
+    .nav_activites:hover, .nav_hebergements:hover {
+        border-top: none;
+        border-bottom: solid #3D65FC 2px;
+        /* align-items: center; */
+    }
+    nav a:hover {
+        color:#3D65FC ;
+        
+    }
+    .bloc_intro{
+        padding: 15px;
+    }
+    /*******barre de recherche***mobile****768px
+        ***************** 
+            ***************/
+
+        
+    .bloc_rechercher_formulaire{
+        min-width: 330px ;
+    }
+
+    .bouton_rechercher{
+        display: none;
+    }
+    #btn_loupe{
+        display:flex;
+        margin-left:-9px;
+    }
+
+    .bloc_hebergement {
+        /* display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; */
+        background: #ffffffff;
+        /* border-radius: 25px;
+        max-width: 833px;
+        padding: 32px;
+        min-width: 250px; */
+     }
+     .bloc_populaire {  
+        border-radius:0%;
+        padding: 20px;
+     }
+
+}
