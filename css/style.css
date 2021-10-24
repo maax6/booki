@@ -57,12 +57,13 @@ nav {
 nav a {
     color: black;
 }
-.nav_activites:hover, .nav_hebergements:hover {
+.nav_hebergements a:hover  .nav_hebergements{
     border-top: solid #3D65FC 2px;
   }
   nav a:hover {
     color:#3D65FC ;
   }
+  
   
 /*Main******************************/
 main{
@@ -151,6 +152,7 @@ main a {
 .bouton_rechercher:hover{
    font-size: large;
    box-shadow: 0px 0px 6px 0px #0000002e;
+   cursor: pointer;
 }
 
 /* LOUPE Mobile *******************/
@@ -217,13 +219,14 @@ main a {
     margin-right: 10px;
     
     }
-    .bloc_filtre_lien:hover{
-        box-shadow: 0px 0px 6px 0px #0000002e;
-        border-radius: 34px;
-    }
     .bloc_filtre_genre:hover{
-        border: none;
-  }
+        box-shadow: 0px 0px 6px 0px #0000002e;
+        border: solid 2px #F2F2F2 ;
+        /* border-radius: 34px; */
+    }
+    /* .bloc_filtre_genre:hover{
+      border:#F2F2F2;
+  } */
 
             /* fond fantasque pour hover filtre lien*/
              /* .bloc_filtre_lien:hover{
@@ -599,31 +602,34 @@ height: 42%;
 
 @media screen and (max-width:992px){
  
-        
-        .bloc_principal{
-            flex-direction: column-reverse;
-        }
-        .bloc_populaire{
-            width:100%;
-        }
-        .bloc_hebergement_cartes_all{
-          justify-content: flex-start ;
-        }
-        
-
-
-            .pied_dePage_all_col{
-                flex-direction: column;
-                
-                margin: 50px 0 0 25px;
-            }
-            .pied_dePage h4 {
-                    margin: 10px 0;
-                
-                
-            }
-            
+    .pied_dePage_all_col {
+        column-gap: 18vh;
     }
+
+    .bloc_principal{
+        flex-direction: column-reverse;
+    }
+    .bloc_populaire{
+        width:100%;
+    }
+    .bloc_hebergement_cartes_all{
+        justify-content: flex-start ;
+    }
+    
+
+
+        .pied_dePage_all_col{
+            flex-direction: column;
+            
+            margin: 50px 0 0 25px;
+        }
+        .pied_dePage h4 {
+                margin: 10px 0;
+            
+            
+        }
+            
+}
 
 @media screen and (max-width:768px)  {
     /*pas de marge  en version mobile*/
@@ -636,7 +642,7 @@ height: 42%;
         padding: 0px;
     }
 
-        /*******NAV*******768px
+        /*******NAV*** mobile****768px
             ***************** 
                 ***************/
 
@@ -709,7 +715,9 @@ height: 42%;
         display:flex;
         margin-left:-9px;
     }
-
+/*******bloc principa***mobile****768px
+        ***************** 
+            ***************/
     .bloc_hebergement {
         background: #ffffffff;
         flex-direction: column;
@@ -722,6 +730,9 @@ height: 42%;
         border-radius:0%;
         padding: 20px;
      }
+     /*******bloc activités***mobile****768px
+        ***************** 
+            ***************/
      .bloc_activités_cartes_all {
         min-width: 100%;
         height:auto;
