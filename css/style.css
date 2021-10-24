@@ -34,15 +34,15 @@ nav li {
 .logohead{
     max-height: 4rem;
     margin-top: 15px;
-    margin-inline-start: 0 ;
+    margin-inline-start: 0 ; /* palier à la marge user agent stylesheet*/
     margin-left: 50px;
     padding-top: 1em;
     margin-top: 30px;
 }
 header {
-    height: 120px;
+    height: 120px; /*hauteur du header*/
 }
-  header a{
+header a{ /*couleur des liens du header*/
       color: rgb(61,101,252);
 }
 nav {
@@ -63,6 +63,7 @@ nav a {
   nav a:hover {
     color:#3D65FC ;
   }
+  
 /*Main******************************/
 main{
     margin: auto;
@@ -224,11 +225,12 @@ main a {
         border: none;
   }
 
-            /* fond moins sobre pour hover filtre lien*/
-             /* background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-             linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-             linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-           line-height: 10px; */
+            /* fond fantasque pour hover filtre lien*/
+             /* .bloc_filtre_lien:hover{
+                background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+                line-height: 10px;} */
        
     
     
@@ -479,11 +481,7 @@ main a {
 
     }
 
-    .bloc_activites_casePhoto{
-      height: 75%;
-    }
-
-
+    
     .carte1 .bloc_activites_casePhoto,  .carte4 .bloc_activites_casePhoto{
         height: 87%;
     }
@@ -538,7 +536,7 @@ main a {
     height: 95%;
 }
 
-.carte2{
+ .carte2{
 height: 50%;
 }
 
@@ -600,7 +598,7 @@ height: 42%;
     }
 
 @media screen and (max-width:992px){
-
+ 
         
         .bloc_principal{
             flex-direction: column-reverse;
@@ -614,17 +612,17 @@ height: 42%;
         
 
 
-        .pied_dePage_all_col{
-            flex-direction: column;
+            .pied_dePage_all_col{
+                flex-direction: column;
+                
+                margin: 50px 0 0 25px;
+            }
+            .pied_dePage h4 {
+                    margin: 10px 0;
+                
+                
+            }
             
-            margin: 50px 0 0 25px;
-        }
-        .pied_dePage h4 {
-                margin: 10px 0;
-            
-            
-          }
-        
     }
 
 @media screen and (max-width:768px)  {
@@ -645,6 +643,7 @@ height: 42%;
     nav li {
         padding:0;
         width: 50vh;
+        
     }
     #conteneur_logo{
         display: flex;
@@ -682,15 +681,15 @@ height: 42%;
         margin-block-start: 0px;
         padding-inline-start: 0px;
     }
+    nav li {
+        justify-content: center;
+    }
     .nav_activites:hover, .nav_hebergements:hover {
         border-top: none;
         border-bottom: solid #3D65FC 2px;
         /* align-items: center; */
     }
-    nav a:hover {
-        color:#3D65FC ;
-        
-    }
+    
     .bloc_intro{
         padding: 15px;
     }
@@ -712,18 +711,64 @@ height: 42%;
     }
 
     .bloc_hebergement {
-        /* display: flex;
-        flex-direction: column;
-        flex-wrap: wrap; */
         background: #ffffffff;
-        /* border-radius: 25px;
-        max-width: 833px;
-        padding: 32px;
-        min-width: 250px; */
+        flex-direction: column;
+        
      }
+     .bloc_hebergement_carteCliquable {
+        width: 100%;
+    }
      .bloc_populaire {  
         border-radius:0%;
         padding: 20px;
      }
+     .bloc_activités_cartes_all {
+        min-width: 100%;
+        height:auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 40px;
+        column-gap: 26px;
+        row-gap: 26px;
+        }
+    .carte_haute, .carte2, .carte3, .carte5, .carte6{
+        width: 100%;
+        height: 250px;
+        }
+    
+        .carte_haute .bloc_activites_casePhoto,.carte2 .bloc_activites_casePhoto, .carte3 .bloc_activites_casePhoto,.carte5 .bloc_activites_casePhoto,.carte6 .bloc_activites_casePhoto{
+        height: 75%;
+        }    
+
+    .carte_haute .bloc_activites_casePhoto,.carte2 .bloc_activites_casePhoto .carte3 .bloc_activites_casePhoto,.carte5 .bloc_activites_casePhoto, .carte6 .bloc_activites_casePhoto {
+        height: 70%;
+        }
+
+    .bloc_activites_caseTexte{
+        /* height: 15%; */
+        padding: 10px 15px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    
+        }
+    
+        .bloc_activites_carteCliquable {
+            width: 90%;
+            height: 150px;
+        }
+
+        
+
+
+
+
+
+
+
 
 }
