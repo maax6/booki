@@ -165,15 +165,11 @@ main a {
      border-radius: 15px 15px 15px 15px  ;
      border: none;
      background-color: #3D65FC;
- }
-
- .conteneur_btn{
-     width: 100%;
-     height: 100%;
-     display: flex;
+     cursor:pointer;
      justify-content: center;
      align-items: center;
  }
+
 
 .fa-search {
     color: white;
@@ -224,9 +220,6 @@ main a {
         border: solid 2px #F2F2F2 ;
         /* border-radius: 34px; */
     }
-    /* .filtre_genre:hover{
-      border:#F2F2F2;
-  } */
 
             /* fond fantasque pour hover filtre lien*/
              /* .filtre_lien:hover{
@@ -557,7 +550,7 @@ height: 42%;
 
 
 /****footer****/
-    .pied_dePage {
+    .pied_page {
          width: 100%;
          background-color: #F2F2F2
     }
@@ -575,11 +568,11 @@ height: 42%;
     .pied_liste{
         padding-inline-start: 0%;
     }
-    .pied_dePage h4{
+    .pied_page h4{
         margin: 45px 0 18px 0;
     }
 
-    .pied_dePage a{
+    .pied_page a{
         color:black ;
         font-size: 0.8em;
     }
@@ -623,7 +616,7 @@ height: 42%;
             
             margin: 50px 0 0 25px;
         }
-        .pied_dePage h4 {
+        .pied_page h4 {
                 margin: 10px 0;
             
             
