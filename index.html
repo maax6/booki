@@ -29,8 +29,8 @@
                     <div id="conteneur_logo" >
                         <img class="logohead" src="images/logo/Booki.png" alt="Logo Booki">
                     </div>
-                    <ul class="nav-ul" >
-                        <li class="nav_hebergements"><a href="#bloc_hebergement">Hébergements</a></li>
+                    <ul class="nav_ul" >
+                        <li class="hebergements"><a href="#bloc_hebergement">Hébergements</a></li>
                         <li class="nav_activites"><a href="#bloc_activites">Activités</a></li>
                     </ul>
                 </nav>
@@ -40,67 +40,67 @@
             <!--Main-->
 
             <main>
-                <section id="bloc_intro" class="bloc_intro">
+                <section id="intro" class="intro">
                     <div class="titre_dePage">
                         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                         <p>En plein centre ville ou en pleine nature</p>
                     </div>
                     <!--Zone de recherche-->
-                    <div class="bloc_rechercher">
+                    <div class="rechercher">
                         <form method="post" action="traitement.php">
-                            <div class="bloc_rechercher_formulaire formulaire ligne_formulaire">
+                            <div class="rechercher_formulaire formulaire">
                                 <label for="ville">
                                     <i class="icone_position fas fa-map-marker-alt"> 
                                         <!--Ici, le texte du label c'est l'iconne Font Awesome présente dans la classe du label, pour un autre formulaire on remplace ce commentaire par le nom du label souhaité entre les balises <i> pourquoi pas entre des balises <span> ?  -->
                                     </i>
                                 </label> 
                                 <input type="search" name="zone" id="ville" class="champ_de_recherche" placeholder="Marseille, France" size="16" >
-                                <input class="bouton_rechercher" type="submit" value="Rechercher">
+                                <input class="btn_rechercher" type="submit" value="Rechercher">
                                 <button id="btn_loupe"><div class="conteneur_btn"><i class="fas fa-search"></i></div></button>
                             </div>
                         </form>
 
                         <section class="bloc_filtre">
-                            <h2 class="bloc_filtre_titre">Filtres</h2>
-                            <ul class="bloc_filtre_liste">
+                            <h2 class="filtre_titre">Filtres</h2>
+                            <ul class="filtre_liste">
 
-                                <li class="bloc_filtre_lien">
+                                <li class="filtre_lien">
                                     <a href="#">   
-                                        <div class="bloc_filtre_genre">
-                                            <div class="bloc_filtre_conteneur_icone">
-                                                <i class="bloc_filtre_icone_ronde fas fa-money-bill-wave"></i>
+                                        <div class="filtre_genre">
+                                            <div class="filtre_ctnr_icone">
+                                                <i class="icone_rnd fas fa-money-bill-wave"></i>
                                             </div>
-                                            <span class="bloc_filtre_conteneur_texte">Économique</span>
+                                            <span class="filtre_ctnr_texte">Économique</span>
                                         </div>
                                     </a>
                                 </li>  
-                                <li class="bloc_filtre_lien">
+                                <li class="filtre_lien">
                                     <a href="#">   
-                                        <div class="bloc_filtre_genre">
-                                            <div class="bloc_filtre_conteneur_icone">
-                                                <i class="bloc_filtre_icone_ronde fas fa-child"></i>
+                                        <div class="filtre_genre">
+                                            <div class="filtre_ctnr_icone">
+                                                <i class="icone_rnd fas fa-child"></i>
                                             </div>
-                                            <span class="bloc_filtre_conteneur_texte">Familial</span>
+                                            <span class="filtre_ctnr_texte">Familial</span>
                                         </div>
                                     </a>
                                 </li>  
-                                <li class="bloc_filtre_lien">
+                                <li class="filtre_lien">
                                     <a href="#">   
-                                        <div class="bloc_filtre_genre">
-                                            <div class="bloc_filtre_conteneur_icone">
-                                                <i class="bloc_filtre_icone_ronde fas fa-heart"></i>
+                                        <div class="filtre_genre">
+                                            <div class="filtre_ctnr_icone">
+                                                <i class="icone_rnd fas fa-heart"></i>
                                             </div>
-                                            <span class="bloc_filtre_conteneur_texte">Romantique</span>
+                                            <span class="filtre_ctnr_texte">Romantique</span>
                                         </div>
                                     </a>
                                 </li>  
-                                <li class="bloc_filtre_lien">
+                                <li class="filtre_lien">
                                     <a href="#">   
-                                        <div class="bloc_filtre_genre">
-                                            <div class="bloc_filtre_conteneur_icone">
-                                                <i class="bloc_filtre_icone_ronde fas fa-dog"></i>
+                                        <div class="filtre_genre">
+                                            <div class="filtre_ctnr_icone">
+                                                <i class="icone_rnd fas fa-dog"></i>
                                             </div>
-                                            <span class="bloc_filtre_conteneur_texte">Animaux autorisés</span>
+                                            <span class="filtre_ctnr_texte">Animaux autorisés</span>
                                         </div>
                                     </a>
                                 </li>  
@@ -299,7 +299,7 @@
                 <section class="bloc_secondaire" id="bloc_secondaire">
                     <div class="bloc_activites" id="bloc_activites">
                         <h2 class="bloc_principal_titreSection">Activités à Marseille</h2>
-                        <div class="bloc_activités_cartes_all">
+                        <div class="bloc_activites_cartes_all">
                             <a class="bloc_activites_carteCliquable carte1 carte_haute" href="#">
                                 <div class="bloc_activites_casePhoto">
                                     <img class="bloc_activites_photo" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo du port de marseille avec vue sur la basilique Notre Dame de la Garde">
