@@ -42,27 +42,33 @@ nav li {
 header {
     height: 120px; /*hauteur du header*/
 }
-header a{ /*couleur des liens du header*/
-      color: rgb(61,101,252);
-}
 nav {
     display: flex;
     margin-right: 30px;
     justify-content: space-between;
 }
-.nav_hebergements, .nav_activites{
-    padding-top: 52px;
-}
-
 nav a {
     color: black;
 }
-.nav_hebergements a:hover  .nav_hebergements{
-    border-top: solid #3D65FC 2px;
+.nav_hebergements, .nav_activites{
+    padding-top: 52px;
+    border-top: solid white 4px; /*Permet de ne pas décaler les lien lorsque la border bleue apparait au hover*/
+}
+
+
+.nav_hebergements:hover , .nav_activites:hover {
+    border-top: solid #3D65FC 4px;
+    cursor: pointer;
   }
-  nav a:hover {
+
+  .nav_hebergements:hover a,.nav_activites:hover a{
+      color: #3D65FC;
+  }
+
+  /* nav a:hover 
     color:#3D65FC ;
-  }
+  } */                  /* le lien se met en bleu au survol du lien uniquement, pas opti*/
+ 
   
   
 /*Main******************************/
