@@ -3,7 +3,16 @@
     box-sizing: border-box;
     font-family:'raleway', monospace,  sans-serif;;
     list-style-type: none;
+    
 }
+
+
+
+html {
+    scroll-behavior: smooth; 
+    }
+
+
 
 a{
     text-decoration: none;
@@ -39,6 +48,7 @@ nav li {
     padding-top: 1em;
     margin-top: 30px;
 }
+
 header {
     height: 120px; /*hauteur du header*/
 }
@@ -451,60 +461,73 @@ main a {
      
 
     .activites{
+        height: 520px;
         min-width: 100%;
         display: flex;
         flex-direction: column;
-        margin-bottom: 50px;
     }
 
 
     .activites_cartes_all{
-        min-width: 100%;
-        height: 520px;
+        height: 460px;
         display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+       
+    }
+
+    .activites_col{
+        display:flex ;
         flex-direction: column;
-        justify-content: space-around;
-        align-content: space-around;
-        flex-wrap: wrap;
-        align-items: center;
-        /* padding-bottom: 40px; */
-        column-gap: 26px;
-        row-gap: 26px;
+        justify-content: space-between;
+        row-gap: 30px;
+        width:25%;
+    }
+    .act_col2{
+     height: 100%;
+    }
+    .act_col4{
+        height: 100%;
     }
 
     .activites_carte{
         background-color: #ffffffff;
-        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         border-radius: 25px;
         box-shadow: 0 0 20px #0000002e;
-        width: 22.5%;
-
+        height: 100%;
     }
 
-    
-    .carte1 .activites_case_img,  .carte4 .activites_case_img{
-        height: 87%;
+    .carte1 .activites_case_img, .carte4 .activites_case_img{
+        height: 90%;
     }
-
     .carte2 .activites_case_img{
-        height: 75%;
+        height: 80%;
     }
-
     .carte3 .activites_case_img{
-        height: 64%;
+        height: 70%;
     }
-
     .carte5 .activites_case_img{
-        height: 71%;
+        height: 80%;
     }
-
     .carte6 .activites_case_img{
-        height: 72%;
+        height: 65%;
     }
 
 
+    .carte2{
+        height: 52%;
+    }
+    .carte3{
+        height: 40%;
+    }
+    .carte5{
+        height:60%;
+    }
+    .carte6{
+        height:32%;
+    }
 
     .activites_photo{
     width: 100%;
@@ -517,12 +540,12 @@ main a {
     }
 
     .activites_caseTxt{
-        /* height: 15%; */
         padding: 15px 10px;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: flex-start;
+        
     
     }
 
@@ -533,26 +556,6 @@ main a {
         margin: 0px;
         padding-top:5px
     }
-
-.carte_haute{
-    height: 95%;
-}
-
- .carte2{
-height: 50%;
-}
-
-.carte3{
-height: 33%;
-}
-
-.carte5{
-height: 42%;
-}
-
-.carte6{
-    height: 44%; 
-}
 
 
 /****footer****/
@@ -689,12 +692,15 @@ height: 42%;
     nav li {
         justify-content: center;
     }
+    .nav_activites, .nav_hebergements {
+        border-top: none;
+        border-bottom: solid white 3px;
+    }
     .nav_activites:hover, .nav_hebergements:hover {
         border-top: none;
-        border-bottom: solid #3D65FC 2px;
-        /* align-items: center; */
+        border-bottom: solid #3D65FC 3px;
+
     }
-    
     .intro{
         padding: 15px;
     }
@@ -733,7 +739,7 @@ height: 42%;
         ***************** 
             ***************/
 
-    .activites_cartes_all {
+    /* .activites_cartes_all {
         min-width: 100%;
         height:auto;
         flex-direction: column;
@@ -749,17 +755,10 @@ height: 42%;
         width: 100%;
         height: 250px;
         }
-    
-        .carte_haute .activites_case_img,.carte2 .activites_case_img, .carte3 .activites_case_img,.carte5 .activites_case_img,.carte6 .activites_case_img{
-        height: 75%;
-        }    
-
-    .carte_haute .activites_case_img,.carte2 .activites_case_img .carte3 .activites_case_img,.carte5 .activites_case_img, .carte6 .activites_case_img {
-        height: 70%;
-        }
+   
 
     .activites_caseTxt{
-        /* height: 15%; */
+        /* height: 15%; 
         padding: 10px 15px;
         display: flex;
         justify-content: center;
@@ -771,8 +770,7 @@ height: 42%;
         .activites_carte {
             width: 90%;
             height: 150px;
-        }
-
+        } */
         
 
 
