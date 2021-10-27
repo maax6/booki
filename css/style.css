@@ -528,6 +528,7 @@ main a {
     .carte6{
         height:32%;
     }
+    
 
     .activites_photo{
     width: 100%;
@@ -540,7 +541,7 @@ main a {
     }
 
     .activites_caseTxt{
-        padding: 15px 10px;
+        padding: 10px 10px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -632,9 +633,28 @@ main a {
         }
             
 }
+@media screen and (max-width:835px) {
+    .carte2 .activites_caseTxt, .carte6 .activites_caseTxt{
+        margin-top:-7px;/*Correction du dépasement tu titre des cartes 2 et 6 en dessous de 835px(annulation de la marge en dessous de 768px*/
+    }
+    
+}
+
+@media screen and (max-width:813px) {
+    .hebergement_carte{
+        width:46%;
+    }
+        
+    
+    
+}
+
 
 @media screen and (max-width:768px)  {
     /*pas de marge  en version mobile*/
+    .carte2 .activites_caseTxt, .carte6 .activites_caseTxt{
+        margin-top:0px;
+    }
     .page_entiere{
         margin: 0;
     }
