@@ -360,6 +360,11 @@ main a {
     border-top-left-radius: 20px ;
     border-top-right-radius: 20px;
 }
+/* .hebergement_case_img img{
+    display: block;
+    margin: auto;
+
+} */
 
     .hebergement_caseTxt{
         display: flex;
@@ -604,10 +609,6 @@ main a {
     }
 
 @media screen and (max-width:992px){
- 
-    .pied_corps {
-        column-gap: 18vh;
-    }
 
     .principal{
         flex-direction: column-reverse;
@@ -686,7 +687,7 @@ main a {
         margin-top: 30px;
     }
     header {
-        height: 157px;
+        height: auto;
     }
     nav {
         flex-direction: column;
@@ -694,16 +695,12 @@ main a {
         align-items: center;
         margin-right: 0;
     }
-    .nav_hebergements, .nav_activites{
-        padding-top: 0;
-    }
-    .nav_activites{
-        padding-top: 0;
-    }
-    .nav_hebergements{
-        padding-top: 0;
-    }
 
+    
+    .nav_hebergements a, .nav_activites a{
+        padding-bottom: 20px;
+        font-size: larger;
+    }
     nav ul{
         width: 100%;
         margin-block-start: 0px;
@@ -714,7 +711,7 @@ main a {
     }
     .nav_activites, .nav_hebergements {
         border-top: none;
-        border-bottom: solid white 3px;
+        border-bottom: solid white 4px;
     }
     .nav_activites:hover, .nav_hebergements:hover {
         border-top: none;
